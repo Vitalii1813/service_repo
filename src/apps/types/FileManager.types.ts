@@ -4,22 +4,22 @@
  * It contains the following properties:
  */
 export type Node = {
-    /**
-     * Node Name
-     */
-    name: string;
-    /**
-     * Node full path to root
-     */
-    path: string;
-    /**
-     * Node size in bits
-     */
-    size: number;
-    /**
-     * Is node directory
-     */
-    isDirectory: boolean;
+  /**
+   * Node Name
+   */
+  name: string;
+  /**
+   * Node full path to root
+   */
+  path: string;
+  /**
+   * Node size in bits
+   */
+  size: number;
+  /**
+   * Is node directory
+   */
+  isDirectory: boolean;
 };
 
 /**
@@ -33,9 +33,9 @@ export type FileNode = Node;
  * It extends the `Node` type.
  */
 export type DirectoryNode = Node & {
-    /**
-     * Directory children
-     * It can be a list of `FileNode` and/or a `DirectoryNode`
-     */
-    children: Node[];
+  /**
+   * Directory children
+   * It can be a list of `FileNode` and/or a `DirectoryNode`
+   */
+  children: Node[];
 };
